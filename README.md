@@ -4,8 +4,8 @@ Este projeto contém um script PHP que implementa um algoritmo de ordenação ex
 
 ## Requisitos:
 
-PHP 7.0 ou superior
-Permissões de leitura e escrita no sistema de arquivos
+- PHP 7.0 ou superior
+- Permissões de leitura e escrita no sistema de arquivos
 
 ## Estrutura do Projeto:
 script.php: Script principal que gera o arquivo de entrada, divide o arquivo em partes menores, ordena as partes e interage as partes ordenadas.
