@@ -11,16 +11,16 @@ Permissões de leitura e escrita no sistema de arquivos
 script.php: Script principal que gera o arquivo de entrada, divide o arquivo em partes menores, ordena as partes e interage as partes ordenadas.
 README.md: Arquivo de documentação (este arquivo).
 
-# Como Usar
+## Como Usar
 - Clonar o Repositório
 - Rodar o codigo com uma extensao do php no vs code
-# Executar a Ordenação
+## Executar a Ordenação
 - Após gerar o arquivo de entrada, o script automaticamente procederá para dividir o arquivo, ordenar as partes, e intercalar as partes ordenadas em um único arquivo de saída chamado arquivo_ordenado.txt.
 
-#  Verificar o Resultado
+##  Verificar o Resultado
 - Verifique o arquivo de saída arquivo_ordenado.txt para confirmar que os dados foram ordenados corretamente.
 
-# Personalização
+## Personalização
 Você pode ajustar os seguintes parâmetros no script.php:
 
 - generateInputFile('grande_arquivo.txt', 1000000, 1000000): Gera um arquivo de entrada com 1.000.000 de números aleatórios entre 1 e 1.000.000. Você pode ajustar esses números conforme necessário.
