@@ -1,18 +1,31 @@
 # Ordenação Externa de Arquivos
 
-Você deve escrever um script PHP que seja capaz de ordenar grandes conjuntos de dados contidos em arquivos externos. O desafio consiste em criar um algoritmo de ordenação externa eficiente que possa lidar com arquivos de entrada de tamanho arbitrário, garantindo que o processo de ordenação seja eficiente em termos de uso de memória e tempo de execução.
+Este projeto contém um script PHP que implementa um algoritmo de ordenação externa para ordenar grandes conjuntos de dados contidos em arquivos externos. O script é capaz de lidar com arquivos de entrada de tamanho arbitrário, potencialmente maiores do que a memória disponível no servidor, utilizando um algoritmo de ordenação próprio (Merge Sort).
 
 ## Requisitos:
 
-- O script deve ser capaz de lidar com arquivos de entrada de tamanho arbitrário, potencialmente maiores do que a memória disponível no servidor.
-- O script deve conter um algoritmo de ordenação próprio, não utilizando assim funções de ordenação padrões.
-- O algoritmo de ordenação deve ser eficiente em termos de tempo de execução e uso de recursos.
-- O script deve ser capaz de ordenar os dados em ordem ascendente ou descendente, conforme especificado.
-- O script deve ser bem documentado e fácil de entender para outros desenvolvedores.
-- O script deve ser feito em PHP puro, sem uso de frameworks.
+PHP 7.0 ou superior
+Permissões de leitura e escrita no sistema de arquivos
 
-## Dicas:
+## Estrutura do Projeto:
+script.php: Script principal que gera o arquivo de entrada, divide o arquivo em partes menores, ordena as partes e interage as partes ordenadas.
+README.md: Arquivo de documentação (este arquivo).
 
-- Crie um arquivo de entrada contendo um grande conjunto de números não ordenados.
-- Execute o script PHP fornecido para ordenar o arquivo de entrada.
-- Verifique se o arquivo de saída está corretamente ordenado.
+# Como Usar
+- Clonar o Repositório
+- Rodar o codigo com uma extensao do php no vs code
+# Executar a Ordenação
+- Após gerar o arquivo de entrada, o script automaticamente procederá para dividir o arquivo, ordenar as partes, e intercalar as partes ordenadas em um único arquivo de saída chamado arquivo_ordenado.txt.
+
+#  Verificar o Resultado
+- Verifique o arquivo de saída arquivo_ordenado.txt para confirmar que os dados foram ordenados corretamente.
+
+# Personalização
+Você pode ajustar os seguintes parâmetros no script.php:
+
+- generateInputFile('grande_arquivo.txt', 1000000, 1000000): Gera um arquivo de entrada com 1.000.000 de números aleatórios entre 1 e 1.000.000. Você pode ajustar esses números conforme necessário.
+- externalSort($inputFile, $outputFile, 1000, $order): Função principal para ordenar o arquivo. Os parâmetros são:
+- $inputFile: Arquivo de entrada.
+- $outputFile: Arquivo de saída.
+- $chunkSize: Tamanho de cada parte em linhas.
+- $order: Ordem de ordenação ('asc' para ascendente, 'desc' para descendente).
